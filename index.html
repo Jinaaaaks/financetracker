@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Personal Finance Tracker</h1>
+    
+    <!-- Form for adding transactions -->
+    <section id="add-transaction">
+        <h2>Add Transaction</h2>
+        <form id="transaction-form">
+            <input type="text" id="description" placeholder="Description" required>
+            <input type="number" id="amount" placeholder="Amount" required>
+            <input type="date" id="date" required>
+            <select id="type" required>
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+            </select>
+            <button type="submit">Add Transaction</button>
+        </form>
+    </section>
+    
+    <!-- Display balance -->
+    <section id="balance">
+        <h2>Balance</h2>
+        <p id="current-balance">$0.00</p>
+    </section>
+
+    <!-- Display transactions -->
+    <section id="transactions-list">
+        <h2>Transactions</h2>
+        <ul id="transactions"></ul>
+    </section>
+    
+    <!-- Form for setting goals -->
+    <section id="set-goal">
+        <h2>Set Financial Goal</h2>
+        <form id="goal-form">
+            <input type="text" id="goal-description" placeholder="Goal Description" required>
+            <input type="number" id="goal-amount" placeholder="Goal Amount" required>
+            <input type="date" id="goal-date" required>
+            <button type="submit">Set Goal</button>
+        </form>
+    </section>
+    
+    <!-- Display saved goals -->
+    <section id="goals-list">
+        <h2>Financial Goals</h2>
+        <ul id="goals"></ul>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
